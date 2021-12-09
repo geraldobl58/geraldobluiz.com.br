@@ -22,7 +22,7 @@ function App({ Component, pageProps }: AppProps) {
         ></link>
         <meta
           name="description"
-          content="A simple project stater to work with Typescript, React, NextJS and Styled Components "
+          content="Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps"
         />
       </Head>
       <GlobalStyles />
