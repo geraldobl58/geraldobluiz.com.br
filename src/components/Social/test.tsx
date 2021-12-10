@@ -3,18 +3,14 @@ import { renderWithTheme } from 'utils/tests/helpers'
 
 import Social from '.'
 
-const props = {
-  title: 'Reactjs',
-  icon: 'img/icons/react.svg'
-}
-
 describe('<Social />', () => {
   it('should render correctly', () => {
-    renderWithTheme(<Social {...props} />)
+    renderWithTheme(<Social />)
 
-    expect(screen.getByRole('img', { name: props.title })).toHaveAttribute(
-      'src',
-      props.icon
-    )
+    expect(
+      screen.getByRole('heading', { name: /redes sociais/i })
+    ).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: /linkedin/i })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: /github/i })).toBeInTheDocument()
   })
 })
