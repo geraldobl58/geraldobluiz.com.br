@@ -45,7 +45,8 @@ export const MenuLink = styled.a`
   ${({ theme }) => css`
     position: relative;
     color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.medium};
+    font-size: ${theme.font.sizes.small};
+    font-weight: ${theme.font.light};
     margin: 0.3rem ${theme.spacings.small} 0;
     text-decoration: none;
     text-transform: uppercase;

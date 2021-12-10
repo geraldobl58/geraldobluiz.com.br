@@ -15,6 +15,8 @@ export const Wrapper = styled.h2<HeadingProps>`
     color: ${theme.colors[color!]};
     font-size: ${theme.font.sizes.xxlarge};
     font-weight: ${theme.font.normal};
+    margin-top: ${theme.font.sizes.xsmall};
+    margin-bottom: ${theme.grid.gutter};
 
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xxxlarge};

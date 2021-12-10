@@ -8,6 +8,8 @@ export const Wrapper = styled.h5<SubTitleProps>`
     color: ${theme.colors[color!]};
     font-size: ${theme.font.sizes.xsmall};
     font-weight: ${theme.font.light};
+    margin-top: ${theme.grid.gutter};
+    text-transform: uppercase;
 
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xsmall};

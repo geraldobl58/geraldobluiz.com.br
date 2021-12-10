@@ -6,6 +6,7 @@ import Menu from 'components/Menu'
 import SubTitle from 'components/SubTitle'
 
 import * as S from './styles'
+import Icons from 'components/Icons'
 
 const Home = () => (
   <section>
@@ -25,6 +26,7 @@ const Home = () => (
     <Container>
       <SubTitle>Tecnologias</SubTitle>
       <Heading lineLeft>Algumas tecnologias usadas</Heading>
+      <Icons />
     </Container>
 
     <Line />
