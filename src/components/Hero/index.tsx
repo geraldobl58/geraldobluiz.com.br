@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
+import TypedHero from 'components/TypedHero'
 import * as S from './styles'
 
 const Hero = () => (
   <S.Wrapper>
     <S.LeftSidebar>
       <S.Title>
-        <span>👋 Hey, I'm </span> <strong>Geraldo Luiz</strong> a Developer
-        Frontend
+        <span>👋 Hey, I'm </span> <strong>Geraldo Luiz</strong> a Developer{' '}
+        <TypedHero />
       </S.Title>
       <S.Subtitle>
         Sou um desenvolvedor front-end com conhecimento em backend e UX/UI
