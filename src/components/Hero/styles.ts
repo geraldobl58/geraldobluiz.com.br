@@ -5,6 +5,8 @@ export const Wrapper = styled.main`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 12rem;
+  margin-bottom: 5rem;
 
   ${media.lessThan('medium')`
     display: flex;
@@ -40,9 +42,10 @@ export const RightSidebar = styled.div`
 
 export const Title = styled.h1`
   ${({ theme }) => css`
-    width: 42rem;
+    width: 48rem;
     color: ${theme.colors.white};
     font-weight: ${theme.font.bold};
+    font-size: ${theme.font.sizes.xxxlarge};
 
     span {
       font-weight: ${theme.font.light};

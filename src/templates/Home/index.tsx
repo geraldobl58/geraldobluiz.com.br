@@ -7,11 +7,13 @@ import SubTitle from 'components/SubTitle'
 
 import * as S from './styles'
 import Icons from 'components/Icons'
+import Hero from 'components/Hero'
 
 const Home = () => (
   <section>
     <Container>
       <Menu />
+      <Hero />
     </Container>
 
     <Line />
