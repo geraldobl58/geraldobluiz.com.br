@@ -1,13 +1,16 @@
 import * as S from './styles'
 
-export type SocialProps = {
-  title?: string
-  icon: string
-}
-
-const Social = ({ title, icon }: SocialProps) => (
+const Social = () => (
   <S.Wrapper>
-    <img src={icon} alt={title} />
+    <S.Title>Redes Sociais</S.Title>
+    <S.Content>
+      <S.Column>
+        <img src="img/icons/linkedin.svg" alt="Linkedin" />
+      </S.Column>
+      <S.Column>
+        <img src="img/icons/github.svg" alt="Github" />
+      </S.Column>
+    </S.Content>
   </S.Wrapper>
 )
 

@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Social from 'components/Social'
 import TypedHero from 'components/TypedHero'
 import * as S from './styles'
 
@@ -12,6 +13,7 @@ const Hero = () => (
       <S.Subtitle>
         Sou um desenvolvedor front-end com conhecimento em backend e UX/UI
       </S.Subtitle>
+      <Social />
     </S.LeftSidebar>
     <S.RightSidebar>
       <img src="img/icons/person-programmer.svg" alt="Programador" />
