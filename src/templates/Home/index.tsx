@@ -1,15 +1,22 @@
 import { Container } from 'components/Container'
 import { Line } from 'components/Line'
-import Footer from 'components/Footer'
+import { CardProps } from 'components/Card'
+
 import Heading from 'components/Heading'
 import Menu from 'components/Menu'
+import Hero from 'components/Hero'
+import CardPortfolio from 'components/CardPortfolio'
 import SubTitle from 'components/SubTitle'
 import Icons from 'components/Icons'
-import Hero from 'components/Hero'
+import Footer from 'components/Footer'
 
 import * as S from './styles'
 
-const Home = () => (
+export type HomeTemplateProps = {
+  cardPortfolio: CardProps[]
+}
+
+const Home = ({ cardPortfolio }: HomeTemplateProps) => (
   <section>
     <Container>
       <Menu />
@@ -21,6 +28,7 @@ const Home = () => (
     <Container>
       <SubTitle>Visite meu portfolio</SubTitle>
       <Heading lineLeft>Meu portfolio</Heading>
+      <CardPortfolio items={cardPortfolio} />
     </Container>
 
     <Line />
