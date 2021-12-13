@@ -4,10 +4,10 @@ import Footer from 'components/Footer'
 import Heading from 'components/Heading'
 import Menu from 'components/Menu'
 import SubTitle from 'components/SubTitle'
-
-import * as S from './styles'
 import Icons from 'components/Icons'
 import Hero from 'components/Hero'
+
+import * as S from './styles'
 
 const Home = () => (
   <section>

@@ -11,6 +11,7 @@ export const Wrapper = styled.main`
   ${media.lessThan('medium')`
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   `}
 `
 
