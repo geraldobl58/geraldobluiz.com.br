@@ -1,5 +1,15 @@
-import Home from 'templates/Home'
+import Home, { HomeTemplateProps } from 'templates/Home'
 
-export default function Index() {
-  return <Home />
+import portfolioMock from 'components/CardPortfolio/mock'
+
+export default function Index(props: HomeTemplateProps) {
+  return <Home {...props} />
+}
+
+export function getServerSideProps() {
+  return {
+    props: {
+      cardPortfolio: portfolioMock
+    }
+  }
 }

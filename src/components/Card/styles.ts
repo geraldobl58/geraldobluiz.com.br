@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -51,6 +52,10 @@ export const Content = styled.div`
     position: relative;
     height: 100%;
     margin: ${theme.spacings.xsmall};
+
+    ${media.lessThan('medium')`
+      height: 0%;
+    `}
   `}
 `
 

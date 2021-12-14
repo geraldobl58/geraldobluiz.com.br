@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
-import Social, { SocialProps } from '.'
+import Social from '.'
 
 export default {
   title: 'Social',
@@ -10,4 +10,4 @@ export default {
   }
 } as Meta
 
-export const Default: Story<SocialProps> = (args) => <Social {...args} />
+export const Default: Story = (args) => <Social {...args} />

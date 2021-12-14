@@ -43,4 +43,4 @@ export default {
     overlay: 30,
     alwaysOnTop: 50
   }
-}
+} as const

@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
-import Icons, { IconsProps } from '.'
+import Icons from '.'
 
 export default {
   title: 'Icons',
@@ -10,4 +10,4 @@ export default {
   }
 } as Meta
 
-export const Default: Story<IconsProps> = (args) => <Icons {...args} />
+export const Default: Story = (args) => <Icons {...args} />
