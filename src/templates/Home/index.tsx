@@ -34,16 +34,16 @@ const Home = ({ cardPortfolio }: HomeTemplateProps) => (
     <Line />
 
     <Container>
-      <SubTitle>Tecnologias</SubTitle>
-      <Heading lineLeft>Algumas tecnologias usadas</Heading>
-      <Icons />
+      <SubTitle>Blog</SubTitle>
+      <Heading lineLeft>Confira algumas dicas</Heading>
     </Container>
 
     <Line />
 
     <Container>
-      <SubTitle>Blog</SubTitle>
-      <Heading lineLeft>Confira algumas dicas</Heading>
+      <SubTitle>Tecnologias</SubTitle>
+      <Heading lineLeft>Algumas tecnologias usadas</Heading>
+      <Icons />
     </Container>
 
     <Container>
