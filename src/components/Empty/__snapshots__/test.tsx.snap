@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Empty /> should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.c1 {
+  max-width: 100%;
+}
+
+.c2 {
+  color: #FF9901;
+  font-size: 5.6rem;
+}
+
+.c3 {
+  color: #FAFAFA;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+}
+
+.c4 {
+  color: #FAFAFA;
+}
+
+<body>
+  <div>
+    <main
+      class="c0"
+    >
+      <img
+        alt="Whoops: Página não encontrada!"
+        class="c1"
+        role="image"
+        src="/img/empty.svg"
+      />
+      <h2
+        class="c2"
+      >
+        titulo default
+      </h2>
+      <p
+        class="c3"
+      >
+        descricao default
+      </p>
+      <a
+        class="c4"
+        href="/"
+      >
+        Ir para a home
+      </a>
+    </main>
+  </div>
+</body>
+`;
