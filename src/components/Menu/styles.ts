@@ -51,6 +51,7 @@ export const MenuLink = styled.a`
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    cursor: pointer;
 
     &:hover {
       &::after {

@@ -2,14 +2,53 @@ import * as S from './styles'
 
 const About = () => (
   <S.Wrapper>
-    <S.Title>Olá meu nome é Geraldo Luiz</S.Title>
+    <S.Title>Me</S.Title>
+    <S.Description>
+      Entusiasta desenvolvedor front-end com 10 anos de experiência na criação e
+      manutenção de interfaces modernas e focadas no usuário.
+    </S.Description>
     <S.Description>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the standard dummy text ever since the 1500s, when an
-      unknown printer took a galley of type and scrambled it to make a type
-      specimen book.
+      Lorem Ipsum has been the standard dummy text ever since the.
+    </S.Description>
+    <S.Description>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the standard dummy text ever since the.
+    </S.Description>
+    <S.Title>Experiência</S.Title>
+    <S.Description>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the standard dummy text ever since the.
+    </S.Description>
+    <S.Description>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the standard dummy text ever since the.
+    </S.Description>
+    <S.Title>Front-end</S.Title>
+    <S.Description>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the standard dummy text ever since the.
+    </S.Description>
+    <S.Description>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the standard dummy text ever since the.
+    </S.Description>
+    <S.Description>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the standard dummy text ever since the.
+    </S.Description>
+    <S.Description>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the standard dummy text ever since the.
+    </S.Description>
+    <S.Description>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the standard dummy text ever since the.
     </S.Description>
   </S.Wrapper>
 )
 
 export default About
+
+7.544
+2.534

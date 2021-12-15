@@ -1,13 +1,14 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from 'utils/tests/helpers'
 
 import About from '.'
 
 describe('<About />', () => {
   it('should render the heading', () => {
-    const { container } = render(<About />)
+    renderWithTheme(<About />)
 
-    expect(screen.getByRole('heading', { name: /About/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /me/i })).toBeInTheDocument()
 
-    expect(container.firstChild).toMatchSnapshot()
+    expect(screen.getByText(/entusiasta desenvolvedor/i)).toBeInTheDocument()
   })
 })
