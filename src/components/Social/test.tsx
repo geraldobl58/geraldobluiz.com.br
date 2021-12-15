@@ -8,7 +8,7 @@ describe('<Social />', () => {
     renderWithTheme(<Social />)
 
     expect(
-      screen.getByRole('heading', { name: /redes sociais/i })
+      screen.getByRole('heading', { name: /minhas redes/i })
     ).toBeInTheDocument()
     expect(screen.getByRole('img', { name: /linkedin/i })).toBeInTheDocument()
     expect(screen.getByRole('img', { name: /github/i })).toBeInTheDocument()
