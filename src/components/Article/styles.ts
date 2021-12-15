@@ -7,8 +7,12 @@ export const Wrapper = styled.main`
 `
 
 export const Content = styled.article`
-  display: flex;
-  align-items: center;
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    padding-top: ${theme.spacings.medium};
+    border-top: 1px solid #292b2d;
+  `}
 `
 
 export const Date = styled.h5`
