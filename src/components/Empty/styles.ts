@@ -9,6 +9,7 @@ export const Wrapper = styled.main`
 
 export const Image = styled.img`
   max-width: 100%;
+  width: 30rem;
 `
 
 export const Title = styled.h2`

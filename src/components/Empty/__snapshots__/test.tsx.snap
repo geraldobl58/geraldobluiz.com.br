@@ -18,6 +18,7 @@ exports[`<Empty /> should render correctly 1`] = `
 
 .c1 {
   max-width: 100%;
+  width: 30rem;
 }
 
 .c2 {
