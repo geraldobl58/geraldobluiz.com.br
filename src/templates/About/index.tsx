@@ -49,6 +49,3 @@ const About = () => (
 )
 
 export default About
-
-7.544
-2.534
