@@ -10,10 +10,10 @@ const props = {
 }
 
 describe('<News />', () => {
-  it('should render menu and footer', () => {
+  it('should render heading', () => {
     renderWithTheme(<News {...props} />)
 
-    expect(screen.getByRole('heading', { name: /dicas/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /blog/i })).toBeInTheDocument()
 
     expect(
       screen.getByRole('heading', {

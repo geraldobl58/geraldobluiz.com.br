@@ -1,6 +1,6 @@
 import { ArticleProps } from 'components/Article'
-import CardArticle from 'components/CardArticle'
 import { Container } from 'components/Container'
+import CardArticle from 'components/CardArticle'
 
 import Heading from 'components/Heading'
 import SubTitle from 'components/SubTitle'
@@ -14,7 +14,7 @@ export type NewsTemplateProps = {
 const News = ({ cardArticle }: NewsTemplateProps) => (
   <Base>
     <Container>
-      <SubTitle>Dicas</SubTitle>
+      <SubTitle>Blog</SubTitle>
       <Heading lineLeft>Confira algumas dicas e tutoriais</Heading>
       <CardArticle items={cardArticle} />
     </Container>

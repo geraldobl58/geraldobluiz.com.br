@@ -10,7 +10,7 @@ const props = {
 import Jobs from '.'
 
 describe('<Jobs />', () => {
-  it('should render menu and footer', () => {
+  it('should render heading', () => {
     renderWithTheme(<Jobs {...props} />)
 
     expect(screen.getByRole('heading', { name: /jobs/i })).toBeInTheDocument()

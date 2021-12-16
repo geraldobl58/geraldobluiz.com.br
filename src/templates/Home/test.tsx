@@ -12,7 +12,7 @@ const props = {
 }
 
 describe('<Home />', () => {
-  it('should render menu and footer', () => {
+  it('should render heading', () => {
     renderWithTheme(<Home {...props} />)
 
     expect(
