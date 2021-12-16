@@ -22,7 +22,5 @@ describe('<Article />', () => {
     expect(
       screen.getByRole('heading', { name: props.title })
     ).toBeInTheDocument()
-
-    expect(screen.getByText(/lorem ipsum is simply/i)).toBeInTheDocument()
   })
 })

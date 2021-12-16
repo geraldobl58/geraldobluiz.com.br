@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.article`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.xxlarge};
   `}
 `
 
-export const Content = styled.article`
+export const Content = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
@@ -30,14 +30,5 @@ export const Title = styled.h3`
     color: ${theme.colors.white};
     font-size: ${theme.font.sizes.xxlarge};
     font-weight: ${theme.font.light};
-  `}
-`
-
-export const Description = styled.div`
-  ${({ theme }) => css`
-    color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.small};
-    font-weight: ${theme.font.light};
-    margin-top: ${theme.spacings.small};
   `}
 `
