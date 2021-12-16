@@ -49,7 +49,7 @@ const Menu = () => {
           <Link href="/blog" passHref>
             <S.MenuLink>Blog</S.MenuLink>
           </Link>
-          <Link href="/contact" passHref>
+          <Link href="/contato" passHref>
             <S.MenuLink>Contato</S.MenuLink>
           </Link>
         </S.MenuNav>
@@ -70,7 +70,7 @@ const Menu = () => {
           <Link href="/blog" passHref>
             <S.MenuLink>Blog</S.MenuLink>
           </Link>
-          <Link href="/contact" passHref>
+          <Link href="/contato" passHref>
             <S.MenuLink>Contato</S.MenuLink>
           </Link>
         </S.MenuNav>
