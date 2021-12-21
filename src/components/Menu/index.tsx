@@ -40,7 +40,7 @@ const Menu = () => {
           <Link href="/" passHref>
             <S.MenuLink>Home</S.MenuLink>
           </Link>
-          <Link href="/me" passHref>
+          <Link href="/sobre" passHref>
             <S.MenuLink>Sobre</S.MenuLink>
           </Link>
           <Link href="/portfolio" passHref>
@@ -61,7 +61,7 @@ const Menu = () => {
           <Link href="/" passHref>
             <S.MenuLink>Home</S.MenuLink>
           </Link>
-          <Link href="/me" passHref>
+          <Link href="/sobre" passHref>
             <S.MenuLink>Sobre</S.MenuLink>
           </Link>
           <Link href="/portfolio" passHref>
