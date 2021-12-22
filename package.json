@@ -12,7 +12,8 @@
     "test:watch": "yarn test --watch",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "husky": {
     "hooks": {
@@ -40,6 +41,10 @@
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@babel/preset-typescript": "^7.13.0",
+    "@graphql-codegen/add": "^3.1.0",
+    "@graphql-codegen/cli": "2.3.0",
+    "@graphql-codegen/typescript": "2.4.1",
+    "@graphql-codegen/typescript-operations": "2.2.1",
     "@storybook/addon-essentials": "6.0.10",
     "@storybook/react": "6.0.10",
     "@testing-library/jest-dom": "^5.11.10",
