@@ -1,15 +1,19 @@
 import News, { NewsTemplateProps } from 'templates/News'
 
-import articleMock from 'components/CardArticle/mock'
+import client from 'graphql/client'
+import { GET_POSTS } from 'graphql/queries'
+import { GetPostsQuery } from 'graphql/generated/graphql'
 
 export default function Blog(props: NewsTemplateProps) {
   return <News {...props} />
 }
 
-export function getServerSideProps() {
+export const getStaticProps = async () => {
+  const { posts } = await client.request<GetPostsQuery>(GET_POSTS)
+
   return {
     props: {
-      cardArticle: articleMock
+      cardArticle: posts
     }
   }
 }
