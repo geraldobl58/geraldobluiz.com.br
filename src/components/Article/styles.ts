@@ -3,6 +3,10 @@ import styled, { css } from 'styled-components'
 export const Wrapper = styled.article`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.xxlarge};
+
+    a {
+      text-decoration: none;
+    }
   `}
 `
 
