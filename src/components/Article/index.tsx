@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import dateFormatted from 'utils/dateFormatted'
 
 import * as S from './styles'
 
@@ -14,7 +15,7 @@ const Article = ({ date, slug, title }: ArticleProps) => {
       <Link href={`/post/${slug}`} passHref>
         <a>
           <S.Content>
-            <S.Date>{date}</S.Date>
+            <S.Date>{dateFormatted(date)}</S.Date>
             <S.Title>{title}</S.Title>
           </S.Content>
         </a>
