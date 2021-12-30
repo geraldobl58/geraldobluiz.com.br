@@ -4,7 +4,7 @@ import { renderWithTheme } from 'utils/tests/helpers'
 import PostsTemplate from '.'
 
 const post = {
-  date: '22-12-2021',
+  date: '22/12/21',
   title: 'Lorem Ipsum',
   slug: 'lorem-ipsum',
   description: {
@@ -13,13 +13,11 @@ const post = {
 }
 
 describe('<PostsTemplate />', () => {
-  it('should render the title and body', () => {
+  it('should render the title', () => {
     renderWithTheme(<PostsTemplate post={post} />)
 
     expect(
       screen.getByRole('heading', { name: post.title })
     ).toBeInTheDocument()
-
-    expect(screen.getByText(/lorem ipsum is simply dummy/i)).toBeInTheDocument()
   })
 })

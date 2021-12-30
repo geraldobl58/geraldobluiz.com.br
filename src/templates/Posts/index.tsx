@@ -1,5 +1,7 @@
 import dateFormatted from 'utils/dateFormatted'
 
+import * as S from './styles'
+
 export type PostsTemplateProps = {
   post: {
     date: string
@@ -13,10 +15,12 @@ export type PostsTemplateProps = {
 
 export default function PostsTemplate({ post }: PostsTemplateProps) {
   return (
-    <>
-      <span>{dateFormatted(post.date)}</span>
-      <h1>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.description.html }} />
-    </>
+    <S.Wrapper>
+      <S.Title>{post.title}</S.Title>
+      <S.Date>Postado em: {dateFormatted(post.date)}</S.Date>
+      <S.Description
+        dangerouslySetInnerHTML={{ __html: post.description.html }}
+      />
+    </S.Wrapper>
   )
 }
