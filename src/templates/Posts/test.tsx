@@ -12,7 +12,7 @@ const post = {
   }
 }
 
-describe('<PageTemplate />', () => {
+describe('<PostsTemplate />', () => {
   it('should render the title and body', () => {
     renderWithTheme(<PostsTemplate post={post} />)
 
