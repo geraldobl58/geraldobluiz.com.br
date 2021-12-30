@@ -11,6 +11,10 @@ export const Wrapper = styled.div`
     background-color: ${theme.colors.gray};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+
+    a {
+      text-decoration: none;
+    }
   `}
 `
 

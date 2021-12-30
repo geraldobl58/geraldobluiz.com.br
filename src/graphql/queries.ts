@@ -55,3 +55,45 @@ export const GET_POST_BY_SLUG = gql`
     }
   }
 `
+
+export const GET_PORTFOLIOS = gql`
+  query getPortfolios($first: Int) {
+    portfolios(first: $first) {
+      id
+      cover {
+        url
+      }
+      tag
+      title
+      slug
+      techs
+      description {
+        html
+      }
+      gallery {
+        url
+      }
+    }
+  }
+`
+
+export const GET_PORTFOLIO_BY_SLUG = gql`
+  query getPortfolioBySlug($slug: String!) {
+    portfolio(where: { slug: $slug }) {
+      id
+      cover {
+        url
+      }
+      tag
+      title
+      slug
+      techs
+      description {
+        html
+      }
+      gallery {
+        url
+      }
+    }
+  }
+`
