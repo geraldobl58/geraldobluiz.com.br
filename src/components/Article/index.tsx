@@ -11,7 +11,7 @@ export type ArticleProps = {
 const Article = ({ date, slug, title }: ArticleProps) => {
   return (
     <S.Wrapper>
-      <Link href={`/posts/${slug}`} passHref>
+      <Link href={`/post/${slug}`} passHref>
         <a>
           <S.Content>
             <S.Date>{date}</S.Date>
