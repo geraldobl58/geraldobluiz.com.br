@@ -9,7 +9,7 @@ import { Container } from 'components/Container'
 import Base from 'templates/Base'
 import PostsTemplate, { PostsTemplateProps } from 'templates/Posts'
 
-export default function Post({ post }: PostsTemplateProps) {
+export default function PostPage({ post }: PostsTemplateProps) {
   const router = useRouter()
 
   if (router.isFallback) return null
