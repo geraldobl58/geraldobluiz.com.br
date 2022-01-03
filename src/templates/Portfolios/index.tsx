@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import { useRouter } from 'next/dist/client/router'
+
 type ImageProps = {
   url: string
 }
@@ -20,6 +23,10 @@ import * as S from './styles'
 export default function PortfolioTemplate({
   portfolio
 }: PortfolioTemplateProps) {
+  const router = useRouter()
+
+  if (router.isFallback) return null
+
   return (
     <S.Wrapper>
       <S.Title>{portfolio.title}</S.Title>
@@ -39,7 +46,14 @@ export default function PortfolioTemplate({
 
       <S.Gallery>
         {portfolio.gallery.map((image, index) => (
-          <img key={`photo-${index}`} src={image.url} alt={portfolio.title} />
+          <Image
+            key={`photo-${index}`}
+            src={image.url}
+            alt={portfolio.title}
+            width={1000}
+            height={800}
+            quality={75}
+          />
         ))}
       </S.Gallery>
     </S.Wrapper>

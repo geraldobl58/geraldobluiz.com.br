@@ -53,8 +53,6 @@ export const Gallery = styled.div`
   grid-gap: 3rem;
 
   img {
-    width: 100%;
-    height: 100%;
     background: #f6f7f8;
     background-image: linear-gradient(
       to right,
