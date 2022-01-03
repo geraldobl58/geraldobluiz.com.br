@@ -25,19 +25,23 @@ const Home = ({ cardPortfolio, cardArticle }: HomeTemplateProps) => (
 
     <Line />
 
-    <Container>
-      <SubTitle>Visite meu portfolio</SubTitle>
-      <Heading lineLeft>Meu portfolio</Heading>
-      <CardPortfolio items={cardPortfolio} />
-    </Container>
+    {cardPortfolio.length > 0 && (
+      <Container>
+        <SubTitle>Visite meu portfolio</SubTitle>
+        <Heading lineLeft>Meu portfolio</Heading>
+        <CardPortfolio items={cardPortfolio} />
+      </Container>
+    )}
 
     <Line />
 
-    <Container>
-      <SubTitle>Blog</SubTitle>
-      <Heading lineLeft>Confira algumas dicas</Heading>
-      <CardArticle items={cardArticle} />
-    </Container>
+    {cardArticle.length > 0 && (
+      <Container>
+        <SubTitle>Blog</SubTitle>
+        <Heading lineLeft>Confira algumas dicas</Heading>
+        <CardArticle items={cardArticle} />
+      </Container>
+    )}
 
     <Line />
 
