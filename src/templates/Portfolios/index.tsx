@@ -15,17 +15,33 @@ export type PortfolioTemplateProps = {
   }
 }
 
+import * as S from './styles'
+
 export default function PortfolioTemplate({
   portfolio
 }: PortfolioTemplateProps) {
   return (
-    <>
-      <h1>{portfolio.title}</h1>
-      <div>
+    <S.Wrapper>
+      <S.Title>{portfolio.title}</S.Title>
+      <S.Container>
+        <S.Tag>
+          <h3>Projeto</h3>
+          <p>{portfolio.tag}</p>
+        </S.Tag>
+        <S.Techs>
+          <h3>Tecnologias</h3>
+          <p>{portfolio.techs}</p>
+        </S.Techs>
+      </S.Container>
+      <S.Description
+        dangerouslySetInnerHTML={{ __html: portfolio.description.html }}
+      />
+
+      <S.Gallery>
         {portfolio.gallery.map((image, index) => (
           <img key={`photo-${index}`} src={image.url} alt={portfolio.title} />
         ))}
-      </div>
-    </>
+      </S.Gallery>
+    </S.Wrapper>
   )
 }
