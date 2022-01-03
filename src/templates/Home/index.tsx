@@ -1,3 +1,5 @@
+import { NextSeo } from 'next-seo'
+
 import { Container } from 'components/Container'
 import { Line } from 'components/Line'
 import { CardProps } from 'components/Card'
@@ -17,40 +19,64 @@ export type HomeTemplateProps = {
   cardArticle: ArticleProps[]
 }
 
-const Home = ({ cardPortfolio, cardArticle }: HomeTemplateProps) => (
-  <Base>
-    <Container>
-      <Hero />
-    </Container>
+const Home = ({ cardPortfolio, cardArticle }: HomeTemplateProps) => {
+  return (
+    <>
+      <NextSeo
+        title="Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps"
+        description="Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps"
+        canonical="https://geraldoluiz.dev"
+        openGraph={{
+          url: 'https://geraldoluiz.dev',
+          title: 'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps',
+          description:
+            'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps',
+          images: [
+            {
+              url: 'https://geraldoluiz.dev/img/cover.png',
+              width: 1280,
+              height: 720,
+              alt: 'Geraldo Luiz'
+            }
+          ],
+          site_name: 'Geraldo Luiz'
+        }}
+      />
+      <Base>
+        <Container>
+          <Hero />
+        </Container>
 
-    <Line />
+        <Line />
 
-    {cardPortfolio.length > 0 && (
-      <Container>
-        <SubTitle>Visite meu portfolio</SubTitle>
-        <Heading lineLeft>Meu portfolio</Heading>
-        <CardPortfolio items={cardPortfolio} />
-      </Container>
-    )}
+        {cardPortfolio.length > 0 && (
+          <Container>
+            <SubTitle>Visite meu portfolio</SubTitle>
+            <Heading lineLeft>Meu portfolio</Heading>
+            <CardPortfolio items={cardPortfolio} />
+          </Container>
+        )}
 
-    <Line />
+        <Line />
 
-    {cardArticle.length > 0 && (
-      <Container>
-        <SubTitle>Blog</SubTitle>
-        <Heading lineLeft>Confira algumas dicas</Heading>
-        <CardArticle items={cardArticle} />
-      </Container>
-    )}
+        {cardArticle.length > 0 && (
+          <Container>
+            <SubTitle>Blog</SubTitle>
+            <Heading lineLeft>Confira algumas dicas</Heading>
+            <CardArticle items={cardArticle} />
+          </Container>
+        )}
 
-    <Line />
+        <Line />
 
-    <Container>
-      <SubTitle>Tecnologias</SubTitle>
-      <Heading lineLeft>Algumas tecnologias usadas</Heading>
-      <Icons />
-    </Container>
-  </Base>
-)
+        <Container>
+          <SubTitle>Tecnologias</SubTitle>
+          <Heading lineLeft>Algumas tecnologias usadas</Heading>
+          <Icons />
+        </Container>
+      </Base>
+    </>
+  )
+}
 
 export default Home

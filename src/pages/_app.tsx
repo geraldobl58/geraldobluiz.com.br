@@ -3,6 +3,9 @@ import Head from 'next/head'
 
 import NextNprogress from 'nextjs-progressbar'
 
+import { DefaultSeo } from 'next-seo'
+import SEO from '../../next-seo.config'
+
 import { ThemeProvider } from 'styled-components'
 
 import GlobalStyles from 'styles/global'
@@ -12,9 +15,6 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>
-          Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps
-        </title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
@@ -24,11 +24,8 @@ function App({ Component, pageProps }: AppProps) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         ></link>
-        <meta
-          name="description"
-          content="Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps"
-        />
       </Head>
+      <DefaultSeo {...SEO} />
       <GlobalStyles />
       <NextNprogress
         color="#FF9901"

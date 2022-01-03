@@ -1,3 +1,5 @@
+import { NextSeo } from 'next-seo'
+
 import dateFormatted from 'utils/dateFormatted'
 
 import * as S from './styles'
@@ -15,12 +17,29 @@ export type PostsTemplateProps = {
 
 export default function PostsTemplate({ post }: PostsTemplateProps) {
   return (
-    <S.Wrapper>
-      <S.Title>{post.title}</S.Title>
-      <S.Date>Postado em: {dateFormatted(post.date)}</S.Date>
-      <S.Description
-        dangerouslySetInnerHTML={{ __html: post.description.html }}
+    <>
+      <NextSeo
+        title={`${post.title} - Geraldo Luiz`}
+        description={
+          post.description?.html ||
+          'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps'
+        }
+        canonical="https://geraldoluiz.dev"
+        openGraph={{
+          url: 'https://geraldoluiz.dev',
+          title: `${post.title} - Geraldo Luiz`,
+          description:
+            post.description?.html ||
+            'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps'
+        }}
       />
-    </S.Wrapper>
+      <S.Wrapper>
+        <S.Title>{post.title}</S.Title>
+        <S.Date>Postado em: {dateFormatted(post.date)}</S.Date>
+        <S.Description
+          dangerouslySetInnerHTML={{ __html: post.description.html }}
+        />
+      </S.Wrapper>
+    </>
   )
 }
