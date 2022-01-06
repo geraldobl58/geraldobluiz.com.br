@@ -45,6 +45,11 @@ export const Description = styled.div`
     font-size: ${theme.font.sizes.small};
     margin-top: ${theme.spacings.small};
     margin-bottom: ${theme.spacings.small};
+
+    p {
+      font-size: ${theme.font.sizes.small};
+      line-height: ${theme.spacings.small};
+    }
   `}
 `
 
@@ -53,6 +58,8 @@ export const Gallery = styled.div`
   grid-gap: 3rem;
 
   img {
+    width: 100%;
+    height: 100%;
     background: #f6f7f8;
     background-image: linear-gradient(
       to right,

@@ -51,6 +51,7 @@ export const GET_POST_BY_SLUG = gql`
       slug
       description {
         html
+        text
       }
     }
   }
@@ -90,6 +91,7 @@ export const GET_PORTFOLIO_BY_SLUG = gql`
       techs
       description {
         html
+        text
       }
       gallery {
         url

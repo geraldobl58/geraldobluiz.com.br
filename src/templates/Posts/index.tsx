@@ -9,8 +9,9 @@ export type PostsTemplateProps = {
     date: string
     title: string
     slug: string
-    description: {
+    description?: {
       html: string
+      text: string
     }
   }
 }
@@ -21,7 +22,7 @@ export default function PostsTemplate({ post }: PostsTemplateProps) {
       <NextSeo
         title={`${post.title} - Geraldo Luiz`}
         description={
-          post.description?.html ||
+          post.description?.text ||
           'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps'
         }
         canonical="https://geraldoluiz.dev"
@@ -29,7 +30,7 @@ export default function PostsTemplate({ post }: PostsTemplateProps) {
           url: 'https://geraldoluiz.dev',
           title: `${post.title} - Geraldo Luiz`,
           description:
-            post.description?.html ||
+            post.description?.text ||
             'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps'
         }}
       />
@@ -37,7 +38,7 @@ export default function PostsTemplate({ post }: PostsTemplateProps) {
         <S.Title>{post.title}</S.Title>
         <S.Date>Postado em: {dateFormatted(post.date)}</S.Date>
         <S.Description
-          dangerouslySetInnerHTML={{ __html: post.description.html }}
+          dangerouslySetInnerHTML={{ __html: post.description?.html || '' }}
         />
       </S.Wrapper>
     </>

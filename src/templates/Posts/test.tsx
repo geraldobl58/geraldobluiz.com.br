@@ -8,7 +8,8 @@ const post = {
   title: 'Lorem Ipsum',
   slug: 'lorem-ipsum',
   description: {
-    html: 'Lorem Ipsum is simply dummy'
+    html: 'Lorem Ipsum is simply dummy',
+    text: 'lorem ipsum is simply dummy'
   }
 }
 

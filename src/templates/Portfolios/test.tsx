@@ -18,7 +18,8 @@ const portfolio = {
   techs: 'Nextjs, GraphQL',
   slug: 'mobile-app-landing-design-and-app-maintain',
   description: {
-    html: 'lorem ipsum has been the'
+    html: 'lorem ipsum has been the',
+    text: 'lorem ipsum has been the'
   },
   cover: {
     url:

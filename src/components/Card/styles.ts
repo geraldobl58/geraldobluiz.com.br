@@ -54,7 +54,7 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    height: 100%;
+    /* height: 100%; */
     margin: ${theme.spacings.xsmall};
 
     ${media.lessThan('medium')`

@@ -1,17 +1,5 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.section``
-
-export const Title = styled.h3`
-  ${({ theme }) => css`
-    color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.xlarge};
-    font-weight: ${theme.font.bold};
-    margin-top: ${theme.spacings.xxlarge};
-    margin-bottom: ${theme.spacings.xxlarge};
-  `}
-`
-
 export const Description = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.white};
@@ -24,13 +12,14 @@ export const Description = styled.div`
     h3 {
       color: ${theme.colors.white};
       font-size: ${theme.font.sizes.xlarge};
-      font-weight: ${theme.font.bold};
+      font-weight: ${theme.font.light};
       margin-top: ${theme.spacings.xxlarge};
-      margin-bottom: ${theme.spacings.xxlarge};
+      margin-bottom: ${theme.spacings.small};
     }
 
     p {
-      line-height: ${theme.spacings.medium};
+      font-size: ${theme.font.sizes.small};
+      line-height: ${theme.spacings.small};
     }
 
     ul {

@@ -29,13 +29,9 @@ const PageTemplate = ({ heading, subheading, body }: PageTemplateProps) => {
             'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps'
         }}
       />
-      <S.Wrapper>
-        <SubTitle>{heading}</SubTitle>
-        <Heading lineLeft>{subheading}</Heading>
-        <S.Description
-          dangerouslySetInnerHTML={{ __html: body }}
-        ></S.Description>
-      </S.Wrapper>
+      <SubTitle>{heading}</SubTitle>
+      <Heading lineLeft>{subheading}</Heading>
+      <S.Description dangerouslySetInnerHTML={{ __html: body }}></S.Description>
     </>
   )
 }

@@ -8,7 +8,7 @@ describe('<Footer />', () => {
     renderWithTheme(<Footer />)
 
     expect(
-      screen.getByText(/© 2021.Todos os direitos reservados./i)
+      screen.getByText(/© 2022.Todos os direitos reservados./i)
     ).toBeInTheDocument()
   })
 })
