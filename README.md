@@ -10,21 +10,6 @@ My portfolio with some works as a software engineer. 🤓 💪 🚀 😁
 
 <img src="./docs/assets/storybook-desktop.png" width="100%">
 
-
-## Como Iniciar?
-
-1 . **Executando a partir do boilerplate**
-
-Para executar o projeto:
-
-```
-  yarn create next-app -e https://github.com/geraldobl58/geraldoluiz.dev
-```
-
-**Verificando no navegador**
-
-    O projeto vai executar no seguinte endereço: `http://localhost:3000`
-
 ## Commands
 
 - `dev`: runs your application on `localhost:3000`

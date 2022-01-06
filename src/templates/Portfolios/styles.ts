@@ -66,6 +66,7 @@ export const Gallery = styled.div`
     width: 100%;
     height: 100%;
     background: #f6f7f8;
+    border-radius: 9px;
     background-image: linear-gradient(
       to right,
       #f6f7f8 0%,
