@@ -1,6 +1,6 @@
-## Frontend NextJS
+## Frontend Geraldo Luiz
 
-Este é um boilerplate Next.js que foi desenvolvido no curso de React Avançado.
+My portfolio with some works as a software engineer. 🤓 💪 🚀 😁
 
 ## Preview
 
@@ -15,10 +15,10 @@ Este é um boilerplate Next.js que foi desenvolvido no curso de React Avançado.
 
 1 . **Executando a partir do boilerplate**
 
-Para executar o projeto com o boilerplate execute o seguindo comando:
+Para executar o projeto:
 
 ```
-  yarn create next-app -e https://github.com/geraldobl58/boilerplate
+  yarn create next-app -e https://github.com/geraldobl58/geraldoluiz.dev
 ```
 
 **Verificando no navegador**
