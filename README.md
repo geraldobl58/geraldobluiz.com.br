@@ -45,6 +45,7 @@ Estrutura do projeto.
     ├── src
     ├──────── components
     ├──────── pages
+    ├──────── graphql
     ├──────── styles
     ├── .gitignore
     ├── .prettierrc
