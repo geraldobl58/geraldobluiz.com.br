@@ -31,9 +31,9 @@ export default function PortfolioTemplate({
           portfolio.description?.text ||
           'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps'
         }
-        canonical="https://geraldoluiz.dev"
+        canonical="https://www.geraldobluiz.com.br"
         openGraph={{
-          url: 'https://geraldoluiz.dev',
+          url: 'https://www.geraldobluiz.com.br',
           title: `${portfolio.title} - Geraldo Luiz`,
           description:
             portfolio.description?.text ||

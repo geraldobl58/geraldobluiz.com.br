@@ -25,15 +25,15 @@ const Home = ({ cardPortfolio, cardArticle }: HomeTemplateProps) => {
       <NextSeo
         title="Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps"
         description="Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps"
-        canonical="https://geraldoluiz.dev"
+        canonical="https://www.geraldobluiz.com.br"
         openGraph={{
-          url: 'https://geraldoluiz.dev',
+          url: 'https://www.geraldobluiz.com.br',
           title: 'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps',
           description:
             'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps',
           images: [
             {
-              url: 'https://geraldoluiz.dev/img/cover.png',
+              url: 'https://www.geraldobluiz.com.br/img/cover.png',
               width: 1280,
               height: 720,
               alt: 'Geraldo Luiz'

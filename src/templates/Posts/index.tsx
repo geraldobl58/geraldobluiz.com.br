@@ -25,9 +25,9 @@ export default function PostsTemplate({ post }: PostsTemplateProps) {
           post.description?.text ||
           'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps'
         }
-        canonical="https://geraldoluiz.dev"
+        canonical="https://www.geraldobluiz.com.br"
         openGraph={{
-          url: 'https://geraldoluiz.dev',
+          url: 'https://www.geraldobluiz.com.br',
           title: `${post.title} - Geraldo Luiz`,
           description:
             post.description?.text ||

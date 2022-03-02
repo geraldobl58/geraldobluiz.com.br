@@ -20,9 +20,9 @@ const PageTemplate = ({ heading, subheading, body }: PageTemplateProps) => {
           heading ||
           'Geraldo Luiz - Criação e Desenvolvimento de Websites e Apps'
         }
-        canonical="https://geraldoluiz.dev"
+        canonical="https://www.geraldobluiz.com.br"
         openGraph={{
-          url: 'https://geraldoluiz.dev',
+          url: 'https://www.geraldobluiz.com.br',
           title: `${heading} - Geraldo Luiz`,
           description:
             subheading ||
