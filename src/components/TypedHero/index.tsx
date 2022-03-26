@@ -2,7 +2,7 @@ import Typed from 'react-typed'
 
 import * as S from './styles'
 
-const ROLES = ['NextJS', 'ReactJS', 'Typescript', 'Javascript', 'Frontend']
+const ROLES = ['NextJS', 'ReactJS', 'Typescript', 'Javascript', 'Frontend', 'Devops']
 
 const TypedHero = () => (
   <S.Wrapper>
