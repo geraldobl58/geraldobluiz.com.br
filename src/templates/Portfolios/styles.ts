@@ -45,10 +45,22 @@ export const Techs = styled.div`
   `}
 `
 
-export const Description = styled.div`
+export const LinkWeb = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
     margin-top: ${theme.spacings.small};
+    margin-bottom: ${theme.spacings.small};
+
+    a {
+      text-decoration: none;
+      color: ${theme.colors.white};
+    }
+  `}
+`
+
+export const Description = styled.div`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.small};
     margin-bottom: ${theme.spacings.small};
 
     p {

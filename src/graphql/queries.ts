@@ -89,6 +89,7 @@ export const GET_PORTFOLIO_BY_SLUG = gql`
       title
       slug
       techs
+      link
       description {
         html
         text

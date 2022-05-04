@@ -10,6 +10,7 @@ export type PortfolioTemplateProps = {
     title: string
     slug: string
     techs: string
+    link?: string
     description?: {
       html: string
       text: string
@@ -52,6 +53,18 @@ export default function PortfolioTemplate({
             <p>{portfolio.techs}</p>
           </S.Techs>
         </S.Container>
+        {portfolio.link && (
+          <S.LinkWeb>
+            <h3>Website</h3>
+            <p>
+              <a href={`${portfolio.link}`} target="_blank" rel="noreferrer">
+                Acessar
+              </a>
+            </p>
+          </S.LinkWeb>
+        )}
+
+        <h3>Descrição</h3>
         <S.Description
           dangerouslySetInnerHTML={{
             __html: portfolio.description?.html || ''

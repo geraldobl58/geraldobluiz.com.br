@@ -16,6 +16,7 @@ const portfolio = {
   tag: 'Desenvolvimento',
   title: 'Mobile app landing design & app maintain',
   techs: 'Nextjs, GraphQL',
+  link: 'https://frontendmentor-challenge-countries.netlify.app',
   slug: 'mobile-app-landing-design-and-app-maintain',
   description: {
     html: 'lorem ipsum has been the',
