@@ -53,7 +53,7 @@ export const LinkWeb = styled.div`
 
     a {
       text-decoration: none;
-      color: ${theme.colors.white};
+      color: #dfcf75;
     }
   `}
 `
