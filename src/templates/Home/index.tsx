@@ -14,6 +14,8 @@ import Icons from 'components/Icons'
 
 import Base from 'templates/Base'
 
+import * as S from './styles'
+
 export type HomeTemplateProps = {
   cardPortfolio: CardProps[]
   cardArticle: ArticleProps[]
@@ -69,11 +71,13 @@ const Home = ({ cardPortfolio, cardArticle }: HomeTemplateProps) => {
 
         <Line />
 
-        <Container>
-          <SubTitle>Tecnologias</SubTitle>
-          <Heading lineLeft>Algumas tecnologias usadas</Heading>
-          <Icons />
-        </Container>
+        <S.TechsContainer>
+          <Container>
+            <SubTitle>Tecnologias</SubTitle>
+            <Heading lineLeft>Algumas tecnologias usadas</Heading>
+            <Icons />
+          </Container>
+        </S.TechsContainer>
       </Base>
     </>
   )

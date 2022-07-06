@@ -6,6 +6,10 @@ export const Wrapper = styled.main`
     width: 100%;
     margin-bottom: ${theme.grid.gutter};
   `}
+
+  ${media.lessThan('medium')`
+    display: none;
+  `}
 `
 
 export const Column = styled.div`

@@ -31,7 +31,7 @@ const Icons = () => (
         <img src="img/icons/strapi.svg" alt="Strapi" />
       </S.Column>
       <S.Column>
-        <img src="img/icons/github-main.svg" alt="github" />
+        <img src="img/icons/github-main.svg" alt="Github" />
       </S.Column>
     </S.Content>
   </S.Wrapper>
