@@ -43,6 +43,7 @@ Estrutura do projeto.
     .
     ├── node_modules
     ├── src
+    ├── generators
     ├──────── components
     ├──────── pages
     ├──────── graphql
