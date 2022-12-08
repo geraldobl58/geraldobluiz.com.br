@@ -15,7 +15,7 @@ jobs:
           node-version: "14"
           cache: "yarn"
       - run: yarn install
-      - run: yarn lint
+      # - run: yarn lint
       - run: yarn test:coverage
       # The build is already made by Vercel when deploying
       - name: SonarCloud Scan
