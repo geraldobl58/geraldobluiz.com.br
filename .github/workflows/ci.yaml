@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v2
         with:
-          node-version: "18"
+          node-version: "17"
       - run: npm install
       - name: Run test
         id: runtest
