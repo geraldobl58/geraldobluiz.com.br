@@ -36,3 +36,7 @@ export const Title = styled.h3`
     font-weight: ${theme.font.light};
   `}
 `
+
+export const Label = styled.div`
+  ${({ theme }) => css``}
+`
