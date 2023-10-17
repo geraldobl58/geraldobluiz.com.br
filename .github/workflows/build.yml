@@ -1,4 +1,4 @@
-name: CI DEPLOYMENT
+name: CI DEPLOYMENT VERSION
 
 # on: [push]
 on: workflow_dispatch
